@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #111111;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111111;
+    color: white;
+    padding: 25px 8%;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 5px;
+}
+
+header > p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero,
+.shop-hero {
+    min-height: 500px;
+    padding: 120px 8%;
+    background-color: #dedede;
+}
+
+.hero .tagline,
+.shop-hero > p:first-child,
+.section-label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2,
+.shop-hero h2 {
+    max-width: 800px;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero > p:not(.tagline),
+.shop-hero > p:last-child {
+    max-width: 650px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.shop-button {
+    display: inline-block;
+    background-color: #111111;
+    color: white;
+    padding: 15px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.shop-button:hover {
+    background-color: #333333;
+}.featured,
+.story,
+.why-lxced,
+.products {
+    padding: 80px 8%;
+}
+
+.featured h2,
+.story h2,
+.why-lxced h2,
+.products h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.featured > p {
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+.sneaker-grid,
+.product-grid,
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.sneaker-card,
+.product-card,
+.benefit {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    transition: transform 0.3s ease;
+}
+
+.sneaker-card:hover,
+.product-card:hover,
+.benefit:hover {
+    transform: translateY(-6px);
+}
+
+.sneaker-card h3,
+.product-card h3,
+.benefit h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.sneaker-card p,
+.product-card p,
+.benefit p {
+    margin-bottom: 12px;
+}
+
+.story {
+    background-color: #111111;
+    color: white;
+}
+
+.story h2 {
+    max-width: 750px;
+    font-size: 48px;
+}
+
+.story > p:not(.section-label) {
+    max-width: 750px;
+    margin-top: 20px;
+}
+
+.why-lxced {
+    text-align: center;
+}
+
+.benefit {
+    text-align: left;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading > p:first-child,
+.product-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-card a {
+    display: inline-block;
+    color: #111111;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #111111;
+}
+
+.product-card a:hover {
+    opacity: 0.6;
+}footer {
+    background-color: #111111;
+    color: white;
+    padding: 50px 8%;
+    margin-top: 40px;
+}
+
+footer h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}@media (max-width: 800px) {
+    .sneaker-grid,
+    .product-grid,
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2,
+    .shop-hero h2 {
+        font-size: 42px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero,
+    .shop-hero {
+        padding: 80px 6%;
+    }
+
+    .featured,
+    .story,
+    .why-lxced,
+    .products {
+        padding: 60px 6%;
+    }
+}
